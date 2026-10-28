@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed": "#001c3b", "on-primary": "#ffffff", "surface": "#f9f9ff", "secondary-fixed": "#d4e3ff", "inverse-on-surface": "#ecf1ff", "error-container": "#ffdad6", "primary": "#003b72", "on-secondary-container": "#204e84", "surface-container": "#e7eeff", "secondary": "#356096", "surface-variant": "#d8e3fb", "surface-dim": "#cfdaf2", "surface-tint": "#1d5fa8", "on-error": "#ffffff", "tertiary": "#745b00", "error": "#ba1a1a", "background": "#f9f9ff", "surface-bright": "#f9f9ff", "on-tertiary-container": "#4f3d00", "on-surface": "#111c2d", "inverse-primary": "#a6c8ff", "primary-container": "#00529b", "tertiary-fixed-dim": "#f1c100", "on-secondary-fixed": "#001c3a", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#584400", "on-secondary-fixed-variant": "#17487d", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "surface-container-highest": "#d8e3fb", "primary-fixed": "#d5e3ff", "outline": "#727782", "surface-container-low": "#f0f3ff", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#241a00", "on-primary-fixed-variant": "#004787", "on-primary-container": "#a5c7ff", "outline-variant": "#c2c6d3", "secondary-fixed-dim": "#a5c8ff", "surface-container-high": "#dee8ff", "on-background": "#111c2d", "on-surface-variant": "#424751", "tertiary-container": "#d0a600", "primary-fixed-dim": "#a6c8ff", "secondary-container": "#98c0fd", "inverse-surface": "#263143", "tertiary-fixed": "#ffe08b" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-md": "1rem", "margin-lg": "2rem", "space-xl": "2rem", "gutter-lg": "1.5rem", "margin": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-md": "1.5rem" }, "fontFamily": { "headline-sm": ["Inter"], "label-sm": ["Inter"], "headline-xl": ["Inter"], "label-lg": ["Inter"], "numeric-data-md": ["Inter"], "numeric-data-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"] }, "fontSize": { "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-xl": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "numeric-data-md": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "numeric-data-lg": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 flex items-center px-6 gap-3 bg-surface-container-lowest"><img alt="ULoans Banking Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VSm_OP4STvxzifrhwCTxa8x_s3nsqJTazO3Fr4S91tXcte_X9RptAmCR_t-t_urrJel8M_wMKu_JqPvAdX4QGxWZVHw-Ljj1eiDSFnBXbl_sHiqvDw3StMGt-KQkb0bugPUJsSkN9f3v81E-bOjcey_3r41wIaUE3PMP_zr6QDhgWoUgW1E9rIi-I1y4Gs1mhMGXxsKlibYgnnE9_NnEawyXJUDyd85bjhMDP2Nr52FA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">ULoans</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Digital Banking</span></div></div><div class="px-4 py-2"><div class="px-3 py-2 text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Navigasi Utama</div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard-nasabah" href="#"><span class="material-symbols-outlined text-lg">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pengajuan-pinjaman-nasabah" href="#"><span class="material-symbols-outlined text-lg">request_quote</span><span>Pengajuan Pinjaman</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="riwayat-pinjaman" href="#"><span class="material-symbols-outlined text-lg">history</span><span>Riwayat Pinjaman</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="profil-nasabah" href="#"><span class="material-symbols-outlined text-lg">person</span><span>Profil</span></a></nav></div><div class="px-4 py-2"><div class="px-3 py-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"><span>Portal Bank</span><span class="bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase">ADMIN</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-xl shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ringkasan-admin" href="#"><span class="material-symbols-outlined text-lg">analytics</span><span>Overview</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 transition-colors bg-primary-container text-on-primary font-label-lg rounded-xl shadow-sm" data-path="manajemen-pengajuan-admin" href="#"><span class="material-symbols-outlined text-lg">assignment</span><span>Pengajuan Pinjaman</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="data-pengguna-admin" href="#"><span class="material-symbols-outlined text-lg">group</span><span>Data Pengguna</span></a></nav></div></div><div class="p-4 bg-surface-container-low"><div class="flex items-center gap-3 p-2"><span class="material-symbols-outlined text-tertiary">verified_user</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface">OJK & LPS Terdaftar</span><span class="font-label-sm text-label-sm text-on-surface-variant">Sistem Aman ISO 27001</span></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-3"><img alt="ULoans Banking Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VSm_OP4STvxzifrhwCTxa8x_s3nsqJTazO3Fr4S91tXcte_X9RptAmCR_t-t_urrJel8M_wMKu_JqPvAdX4QGxWZVHw-Ljj1eiDSFnBXbl_sHiqvDw3StMGt-KQkb0bugPUJsSkN9f3v81E-bOjcey_3r41wIaUE3PMP_zr6QDhgWoUgW1E9rIi-I1y4Gs1mhMGXxsKlibYgnnE9_NnEawyXJUDyd85bjhMDP2Nr52FA"/><span class="font-headline-sm text-headline-sm text-primary">ULoans Platform</span></div><div class="flex items-center gap-4"><button class="w-10 h-10 flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">notifications</span></button><div class="flex items-center gap-3 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1XbalDSpwGV5rguSiQ-fr-C-DLCK6LQEc73tk7LHEewDrxvTNvcdrNew2lAJg_xKI9OqPT_XD0HcA7JvAgHdh2LZKYckqkw59zzoX9UR515CZnniGn55NlaV906UjkYALZlYezj6GA7zxAvQF_iz13ambjcg57aCMPy0TUIyS3wopHbFEVIlLDTiVtg8mtxTmcYiLuwaN2OuD-WKPrdh0xLHjyiggnyJOx33wO_o4"/><div class="flex flex-col text-left"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Budi Santoso</span><span class="font-label-sm text-label-sm text-on-surface-variant">Nasabah Prioritas</span></div></div></div></header><main class="w-full pt-16 px-8 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Utility Context Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary text-on-primary">
+          Workspace Kredit
+        </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">SLA Review: < 24 Jam Kerja</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Manajemen & Review Pengajuan Pinjaman</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Kelola verifikasi berkas dan keputusan persetujuan kredit nasabah</p>
+</div>
+<!-- Fast Prototype Role Switcher -->
+<div class="flex items-center gap-3">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high text-on-surface-variant text-label-md font-label-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>Otoritas: Credit Underwriter Lv.2</span>
+</div>
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-lowest text-primary hover:bg-surface-container transition-all text-label-lg font-label-lg shadow-sm" data-path="dashboard-nasabah" href="#">
+<span class="material-symbols-outlined text-lg">swap_horiz</span>
+<span>Beralih ke Portal Nasabah</span>
+</a>
+</div>
+</div>
+<!-- Summary Metric Cards (4 Columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 pb-8">
+<!-- Card 1 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-label-md font-label-md uppercase tracking-wider text-on-surface-variant">Total Pengajuan Masuk</span>
+<span class="text-headline-xl font-headline-xl text-on-surface mt-2">128</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-xl">folder_shared</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm text-primary">trending_up</span>
+<span class="text-label-sm font-label-sm text-primary font-semibold">+12 minggu ini</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">vs periode lalu</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-label-md font-label-md uppercase tracking-wider text-on-surface-variant">Menunggu Review</span>
+<span class="text-headline-xl font-headline-xl text-on-surface mt-2">14</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-xl">hourglass_top</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-label-sm font-label-sm text-tertiary font-semibold">Perlu tindakan segera</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">di antrean utama</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-label-md font-label-md uppercase tracking-wider text-on-surface-variant">Disetujui</span>
+<span class="text-headline-xl font-headline-xl text-on-surface mt-2">86</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm text-secondary">verified</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Tingkat persetujuan 67%</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">dari kuota</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="text-label-md font-label-md uppercase tracking-wider text-on-surface-variant">Ditolak</span>
+<span class="text-headline-xl font-headline-xl text-on-surface mt-2">28</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-xl">cancel</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-4 pt-3 bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-sm text-error">info</span>
+<span class="text-label-sm font-label-sm text-error font-semibold">Tidak memenuhi syarat risiko</span>
+</div>
+</div>
+</div>
+<!-- Operational Workspace Container -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm p-6 mb-8 flex flex-col">
+<!-- Filter Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-lg">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl pointer-events-none">search</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" id="adminSearchInput" placeholder="Cari berdasarkan ID Pengajuan atau Nama Pemohon..." type="text"/>
+</div>
+<!-- Filters & Actions -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Status Filter Select -->
+<div class="relative min-w-[160px]">
+<select class="w-full h-11 px-3.5 pr-9 appearance-none rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer transition-all" id="statusFilter">
+<option value="all">Semua Status</option>
+<option selected="" value="pending">Menunggu Review</option>
+<option value="approved">Disetujui</option>
+<option value="rejected">Ditolak</option>
+<option value="canceled">Dibatalkan</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-sm">expand_more</span>
+</div>
+<!-- Nominal Range Dropdown -->
+<div class="relative min-w-[170px]">
+<select class="w-full h-11 px-3.5 pr-9 appearance-none rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:ring-2 focus:ring-primary/20 cursor-pointer transition-all" id="nominalFilter">
+<option value="all">Rentang Nominal: Semua</option>
+<option value="under50">< Rp 50.000.000</option>
+<option value="50to100">Rp 50jt - Rp 100jt</option>
+<option value="above100">> Rp 100.000.000</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-sm">expand_more</span>
+</div>
+<!-- Export CSV Button -->
+<button class="h-11 px-4 inline-flex items-center gap-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg" id="btnExportCsv" type="button">
+<span class="material-symbols-outlined text-lg">download</span>
+<span>Ekspor Data (CSV)</span>
+</button>
+</div>
+</div>
+<!-- Active Filter Chips / Indicators -->
+<div class="flex items-center gap-2 pb-4 text-label-sm font-label-sm text-on-surface-variant">
+<span>Filter aktif:</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+        Status: Menunggu Review
+        <button class="material-symbols-outlined text-xs hover:text-on-surface" onclick="document.getElementById('statusFilter').value='all'; filterTable();" type="button">close</button>
+</span>
+<button class="text-primary hover:underline ml-2" onclick="resetFilters()">Reset Filter</button>
+</div>
+<!-- Applications Table -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-lowest">
+<table class="w-full text-left border-collapse" id="loanTable">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant text-label-sm font-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 font-semibold">ID Pengajuan</th>
+<th class="py-3.5 px-4 font-semibold">Nama Pemohon</th>
+<th class="py-3.5 px-4 font-semibold">Tanggal Masuk</th>
+<th class="py-3.5 px-4 font-semibold text-right">Plafon Pinjaman</th>
+<th class="py-3.5 px-4 font-semibold text-center">Tenor</th>
+<th class="py-3.5 px-4 font-semibold text-center">Status Berkas</th>
+<th class="py-3.5 px-4 font-semibold text-right">Aksi Tindakan</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high font-body-md text-body-md text-on-surface">
+<!-- Row 1: Budi Santoso (Pending Review) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors application-row" data-id="ULN-2025-0582" data-name="Budi Santoso" data-nominal="50000000" data-status="pending">
+<td class="py-4 px-4 font-semibold text-primary">
+<span class="font-numeric-data-md">ULN-2025-0582</span>
+<span class="block text-label-sm text-tertiary font-normal">Antrean Baru</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-label-sm">
+                  BS
+                </div>
+<div>
+<span class="font-medium text-on-surface block">Budi Santoso</span>
+<span class="text-label-sm text-on-surface-variant">NIK: 327309180291****</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-numeric-data-md">12 Mei 2025</td>
+<td class="py-4 px-4 text-right font-numeric-data-lg text-primary font-semibold">
+              Rp 50.000.000
+            </td>
+<td class="py-4 px-4 text-center">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md">12 Bulan</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Menunggu Keputusan
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all text-label-md font-label-md shadow-sm" onclick="openReviewModal('ULN-2025-0582', 'Budi Santoso', 'Rp 50.000.000', '12 Bulan', 'Rp 4.580.000/bln', 'Modal Usaha Retail', 'Rp 15.000.000', '780 (Kolektibilitas 1 / Lancar)')">
+<span class="material-symbols-outlined text-base">rate_review</span>
+<span>Tinjau Pengajuan</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Siti Rahmawati (Pending Review) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors application-row" data-id="ULN-2025-0581" data-name="Siti Rahmawati" data-nominal="75000000" data-status="pending">
+<td class="py-4 px-4 font-semibold text-primary">
+<span class="font-numeric-data-md">ULN-2025-0581</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-sm">
+                  SR
+                </div>
+<div>
+<span class="font-medium text-on-surface block">Siti Rahmawati</span>
+<span class="text-label-sm text-on-surface-variant">NIK: 317102450889****</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-numeric-data-md">12 Mei 2025</td>
+<td class="py-4 px-4 text-right font-numeric-data-lg text-primary font-semibold">
+              Rp 75.000.000
+            </td>
+<td class="py-4 px-4 text-center">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md">24 Bulan</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Menunggu Keputusan
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all text-label-md font-label-md shadow-sm" onclick="openReviewModal('ULN-2025-0581', 'Siti Rahmawati', 'Rp 75.000.000', '24 Bulan', 'Rp 3.820.000/bln', 'Ekspansi Apotek', 'Rp 22.500.000', '745 (Kolektibilitas 1 / Baik)')">
+<span class="material-symbols-outlined text-base">rate_review</span>
+<span>Tinjau Pengajuan</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Hendra Pratama (Approved) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors application-row" data-id="ULN-2025-0580" data-name="Hendra Pratama" data-nominal="20000000" data-status="approved">
+<td class="py-4 px-4 font-semibold text-primary">
+<span class="font-numeric-data-md">ULN-2025-0580</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-sm">
+                  HP
+                </div>
+<div>
+<span class="font-medium text-on-surface block">Hendra Pratama</span>
+<span class="text-label-sm text-on-surface-variant">NIK: 357801120493****</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-numeric-data-md">11 Mei 2025</td>
+<td class="py-4 px-4 text-right font-numeric-data-lg text-primary font-semibold">
+              Rp 20.000.000
+            </td>
+<td class="py-4 px-4 text-center">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md">6 Bulan</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-xs">done</span>
+                Disetujui
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-label-md font-label-md" onclick="showToast('Membuka rincian arsip persetujuan ULN-2025-0580')">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Detail Selesai</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Dewi Lestari (Rejected) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors application-row" data-id="ULN-2025-0579" data-name="Dewi Lestari" data-nominal="120000000" data-status="rejected">
+<td class="py-4 px-4 font-semibold text-primary">
+<span class="font-numeric-data-md">ULN-2025-0579</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-sm">
+                  DL
+                </div>
+<div>
+<span class="font-medium text-on-surface block">Dewi Lestari</span>
+<span class="text-label-sm text-on-surface-variant">NIK: 337402600188****</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-numeric-data-md">10 Mei 2025</td>
+<td class="py-4 px-4 text-right font-numeric-data-lg text-primary font-semibold">
+              Rp 120.000.000
+            </td>
+<td class="py-4 px-4 text-center">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md">36 Bulan</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold">
+<span class="material-symbols-outlined text-xs">close</span>
+                Ditolak
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-label-md font-label-md" onclick="showToast('Catatan komite penolakan: Kapasitas DSR melampaui 40%')">
+<span class="material-symbols-outlined text-base">archive</span>
+<span>Lihat Arsip</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Ahmad Fauzi (Approved) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors application-row" data-id="ULN-2025-0578" data-name="Ahmad Fauzi" data-nominal="35000000" data-status="approved">
+<td class="py-4 px-4 font-semibold text-primary">
+<span class="font-numeric-data-md">ULN-2025-0578</span>
+</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-label-sm">
+                  AF
+                </div>
+<div>
+<span class="font-medium text-on-surface block">Ahmad Fauzi</span>
+<span class="text-label-sm text-on-surface-variant">NIK: 517103190795****</span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 text-on-surface-variant font-numeric-data-md">09 Mei 2025</td>
+<td class="py-4 px-4 text-right font-numeric-data-lg text-primary font-semibold">
+              Rp 35.000.000
+            </td>
+<td class="py-4 px-4 text-center">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md">12 Bulan</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+<span class="material-symbols-outlined text-xs">done</span>
+                Disetujui
+              </span>
+</td>
+<td class="py-4 px-4 text-right">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-label-md font-label-md" onclick="showToast('Membuka rincian arsip persetujuan ULN-2025-0578')">
+<span class="material-symbols-outlined text-base">visibility</span>
+<span>Detail Selesai</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Empty State Container (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-12 px-4 text-center" id="emptyTableState">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-3">
+<span class="material-symbols-outlined text-2xl">search_off</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Tidak ada pengajuan ditemukan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">Coba sesuaikan kata kunci pencarian atau bersihkan filter status untuk melihat data lainnya.</p>
+<button class="mt-4 px-4 py-2 bg-primary text-on-primary rounded-xl font-label-md text-label-md" onclick="resetFilters()">
+          Reset Filter Pencarian
+        </button>
+</div>
+</div>
+<!-- Pagination Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 mt-4 bg-surface-container-lowest">
+<div class="text-body-sm font-body-sm text-on-surface-variant">
+        Menampilkan <span class="font-semibold text-on-surface">1 - 5</span> dari <span class="font-semibold text-on-surface">14</span> pengajuan aktif
+      </div>
+<div class="flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center hover:bg-surface-container-high disabled:opacity-40 transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center shadow-sm" type="button">
+          1
+        </button>
+<button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors" type="button">
+          2
+        </button>
+<button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors" type="button">
+          3
+        </button>
+<button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Administrative Data Integrity Note Card -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex items-start gap-3.5 mb-10">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">policy</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Prosedur Kepatuhan Underwriting & OJK</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Seluruh keputusan persetujuan kredit bernilai di atas Rp 100.000.000 memerlukan verifikasi dokumen SLIK ganda oleh Komite Kredit Cabang. Data pada dashboard ini dienkripsi dengan standar TLS 1.3 dan dipantau audit log perbankan otomatis.
+      </p>
+</div>
+</div>
+<!-- Interactive Slide-Over / Modal Detail View: Tinjau Pengajuan -->
+<div class="fixed inset-0 z-50 hidden" id="reviewSlideOver">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm transition-opacity" onclick="closeReviewModal()"></div>
+<!-- Panel Drawer -->
+<div class="absolute right-0 top-0 bottom-0 w-full max-w-2xl bg-surface-container-lowest shadow-2xl flex flex-col justify-between overflow-y-auto">
+<!-- Drawer Header -->
+<div class="p-6 bg-surface-container-lowest flex items-center justify-between sticky top-0 z-10">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">TINJAUAN KREDIT</span>
+<span class="font-numeric-data-md text-primary font-bold" id="modalAppIdBadge">ULN-2025-0582</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Evaluasi Pengajuan Kredit</h2>
+</div>
+<button class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container flex items-center justify-center transition-colors" onclick="closeReviewModal()">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+</div>
+<!-- Drawer Content -->
+<div class="p-6 space-y-6 flex-1">
+<!-- Prototype disclaimer -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary text-lg">info</span>
+<p class="text-label-sm font-label-sm text-on-surface-variant">
+            Data dan simulasi untuk kebutuhan prototipe. Persetujuan formal tunduk pada otorisasi komite kredit bank dan validasi SLIK resmi.
+          </p>
+</div>
+<!-- Section 1: Data Nasabah & Skor Kredit -->
+<div class="rounded-xl bg-surface-container-low p-5 space-y-4">
+<div class="flex items-center justify-between pb-3 bg-surface-container">
+<span class="font-label-lg text-label-lg text-on-surface">Data Pemohon & Kelayakan</span>
+<span class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-xs">verified</span> Terverifikasi KTP
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Nama Lengkap</span>
+<p class="font-label-lg text-label-lg text-on-surface mt-0.5" id="modalApplicantName">Budi Santoso</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">NIK Pemohon</span>
+<p class="font-label-lg text-label-lg text-on-surface mt-0.5">3273091802910002</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Penghasilan Bulanan</span>
+<p class="font-label-lg text-label-lg text-on-surface mt-0.5" id="modalIncome">Rp 15.000.000 / bln</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Skor Kredit Internal</span>
+<p class="font-label-lg text-label-lg text-secondary font-semibold mt-0.5" id="modalCreditScore">780 (Kolektibilitas 1)</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Rincian Pinjaman Diajukan -->
+<div class="rounded-xl bg-surface-container-low p-5 space-y-4">
+<div class="flex items-center justify-between pb-3 bg-surface-container">
+<span class="font-label-lg text-label-lg text-on-surface">Struktur Fasilitas Kredit</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Kredit Modal Kerja (KMK)</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Plafon Dimohon</span>
+<p class="font-headline-sm text-headline-sm text-primary mt-0.5" id="modalLoanAmount">Rp 50.000.000</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Jangka Waktu (Tenor)</span>
+<p class="font-label-lg text-label-lg text-on-surface mt-0.5" id="modalTenor">12 Bulan</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Estimasi Angsuran Pokok+Bunga</span>
+<p class="font-label-lg text-label-lg text-on-surface mt-0.5" id="modalInstallment">Rp 4.580.000 / bulan</p>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase">Tujuan Pembiayaan</span>
+<p class="font-label-lg text-label-lg text-on-surface mt-0.5" id="modalPurpose">Modal Usaha Retail</p>
+</div>
+</div>
+<!-- Debt Burden Indicator -->
+<div class="mt-3 pt-3 bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Rasio Beban Angsuran (DSR)</span>
+<span class="text-label-md font-label-md text-on-surface font-semibold">30.5% (Ambang aman maks 40%)</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed text-label-sm font-label-sm font-bold">REKOMENDASI: LAYAK</span>
+</div>
+</div>
+<!-- Section 3: Rejection Reason Selection (Conditional view on reject action) -->
+<div class="hidden p-4 rounded-xl bg-error-container/40 space-y-3" id="rejectionSection">
+<div class="flex items-center gap-2 text-error">
+<span class="material-symbols-outlined text-lg">warning</span>
+<span class="font-label-lg text-label-lg font-semibold">Tentukan Alasan Penolakan</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">Pilih alasan institusional yang akan dicatat pada sistem audit dan diteruskan kepada pemohon.</p>
+<select class="w-full h-11 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-error" id="rejectionReasonSelect">
+<option value="dsr">Kapasitas Angsuran (DSR > 40%)</option>
+<option value="doc">Dokumen Tidak Lengkap / Tidak Sesuai Syarat</option>
+<option value="slik">Riwayat Kredit Buruk (Catatan Kolektibilitas OJK)</option>
+<option value="other">Profil Risiko Usaha Tidak Memenuhi Kebijakan Bank</option>
+</select>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low text-label-md font-label-md" onclick="cancelRejectionMode()">Batal</button>
+<button class="px-4 py-2 rounded-xl bg-error text-on-error hover:bg-red-700 text-label-md font-label-md shadow-sm" onclick="finalizeRejection()">Konfirmasi Tolak</button>
+</div>
+</div>
+<!-- Confirmation Prompt for Approval -->
+<div class="hidden p-4 rounded-xl bg-secondary-fixed/50 space-y-3" id="approvalConfirmSection">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-lg">check_circle</span>
+<span class="font-label-lg text-label-lg font-semibold">Konfirmasi Persetujuan Plafon</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface" id="approvalConfirmText">
+            Setujui plafon kredit Rp 50.000.000 untuk nasabah Budi Santoso? Keputusan ini akan membuat kontrak akad digital otomatis.
+          </p>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low text-label-md font-label-md" onclick="cancelApprovalMode()">Batal</button>
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary/90 text-label-md font-label-md shadow-sm" onclick="finalizeApproval()">Ya, Setujui Sekarang</button>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-6 bg-surface-container-lowest flex items-center justify-between gap-3 sticky bottom-0" id="drawerMainActions">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-lg text-label-lg" onclick="closeReviewModal()" type="button">
+          Tutup / Batal
+        </button>
+<div class="flex items-center gap-3">
+<button class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-label-lg text-label-lg" onclick="triggerRejectPrompt()" type="button">
+<span class="material-symbols-outlined text-lg">cancel</span>
+<span>Tolak Pengajuan</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all font-label-lg text-label-lg shadow-sm" onclick="triggerApprovePrompt()" type="button">
+<span class="material-symbols-outlined text-lg">verified</span>
+<span>Setujui Pengajuan</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-8 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="systemToast">
+<div class="px-5 py-3.5 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" id="toastIcon">info</span>
+<span class="text-body-md font-body-md" id="toastMessage">Notifikasi sistem</span>
+</div>
+</div>
+</div>
+<script>
+  let currentActiveReview = null;
+
+  function showToast(message, icon = 'info') {
+    const toast = document.getElementById('systemToast');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+    
+    toastMsg.textContent = message;
+    toastIcon.textContent = icon;
+    
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 3200);
+  }
+
+  function openReviewModal(id, name, amount, tenor, installment, purpose, income, score) {
+    currentActiveReview = { id, name, amount, tenor, installment, purpose, income, score };
+    
+    document.getElementById('modalAppIdBadge').textContent = id;
+    document.getElementById('modalApplicantName').textContent = name;
+    document.getElementById('modalLoanAmount').textContent = amount;
+    document.getElementById('modalTenor').textContent = tenor;
+    document.getElementById('modalInstallment').textContent = installment;
+    document.getElementById('modalPurpose').textContent = purpose;
+    document.getElementById('modalIncome').textContent = income;
+    document.getElementById('modalCreditScore').textContent = score;
+
+    cancelApprovalMode();
+    cancelRejectionMode();
+
+    const slideOver = document.getElementById('reviewSlideOver');
+    slideOver.classList.remove('hidden');
+  }
+
+  function closeReviewModal() {
+    document.getElementById('reviewSlideOver').classList.add('hidden');
+  }
+
+  function triggerRejectPrompt() {
+    document.getElementById('approvalConfirmSection').classList.add('hidden');
+    document.getElementById('rejectionSection').classList.remove('hidden');
+    document.getElementById('rejectionSection').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function cancelRejectionMode() {
+    document.getElementById('rejectionSection').classList.add('hidden');
+  }
+
+  function finalizeRejection() {
+    const reason = document.getElementById('rejectionReasonSelect').value;
+    const appId = currentActiveReview ? currentActiveReview.id : 'ULN-2025-0582';
+    
+    // Update corresponding row in UI table
+    const row = document.querySelector(`.application-row[data-id="${appId}"]`);
+    if (row) {
+      row.setAttribute('data-status', 'rejected');
+      const statusCell = row.cells[5];
+      const actionCell = row.cells[6];
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-error-container text-on-error-container font-semibold">
+          <span class="material-symbols-outlined text-xs">close</span> Ditolak
+        </span>
+      `;
+      actionCell.innerHTML = `
+        <button onclick="showToast('Pengajuan telah ditolak sebelumnya.')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-label-md font-label-md">
+          <span class="material-symbols-outlined text-base">archive</span>
+          <span>Lihat Arsip</span>
+        </button>
+      `;
+    }
+
+    closeReviewModal();
+    showToast(`Pengajuan ${appId} telah ditolak. Alasan dicatat dalam berkas audit.`, 'cancel');
+  }
+
+  function triggerApprovePrompt() {
+    document.getElementById('rejectionSection').classList.add('hidden');
+    const confirmSection = document.getElementById('approvalConfirmSection');
+    const confirmText = document.getElementById('approvalConfirmText');
+    if (currentActiveReview) {
+      confirmText.textContent = `Konfirmasi Persetujuan: Setujui plafon kredit ${currentActiveReview.amount} untuk nasabah ${currentActiveReview.name}?`;
+    }
+    confirmSection.classList.remove('hidden');
+    confirmSection.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function cancelApprovalMode() {
+    document.getElementById('approvalConfirmSection').classList.add('hidden');
+  }
+
+  function finalizeApproval() {
+    const appId = currentActiveReview ? currentActiveReview.id : 'ULN-2025-0582';
+    const row = document.querySelector(`.application-row[data-id="${appId}"]`);
+    if (row) {
+      row.setAttribute('data-status', 'approved');
+      const statusCell = row.cells[5];
+      const actionCell = row.cells[6];
+      statusCell.innerHTML = `
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-label-sm font-label-sm bg-secondary-fixed text-on-secondary-fixed font-semibold">
+          <span class="material-symbols-outlined text-xs">done</span> Disetujui
+        </span>
+      `;
+      actionCell.innerHTML = `
+        <button onclick="showToast('Membuka rincian arsip persetujuan ${appId}')" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all text-label-md font-label-md">
+          <span class="material-symbols-outlined text-base">visibility</span>
+          <span>Detail Selesai</span>
+        </button>
+      `;
+    }
+
+    closeReviewModal();
+    showToast(`Pengajuan ${appId} berhasil disetujui! Notifikasi diteruskan ke nasabah.`, 'verified');
+  }
+
+  // Filter Table Functions
+  function filterTable() {
+    const query = document.getElementById('adminSearchInput').value.toLowerCase().trim();
+    const status = document.getElementById('statusFilter').value;
+    const nominal = document.getElementById('nominalFilter').value;
+    
+    const rows = document.querySelectorAll('.application-row');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const rowId = (row.getAttribute('data-id') || '').toLowerCase();
+      const rowName = (row.getAttribute('data-name') || '').toLowerCase();
+      const rowStatus = row.getAttribute('data-status') || '';
+      const rowNominal = parseInt(row.getAttribute('data-nominal') || '0', 10);
+
+      const matchesSearch = rowId.includes(query) || rowName.includes(query);
+      const matchesStatus = status === 'all' || rowStatus === status;
+      
+      let matchesNominal = true;
+      if (nominal === 'under50') {
+        matchesNominal = rowNominal < 50000000;
+      } else if (nominal === '50to100') {
+        matchesNominal = rowNominal >= 50000000 && rowNominal <= 100000000;
+      } else if (nominal === 'above100') {
+        matchesNominal = rowNominal > 100000000;
+      }
+
+      if (matchesSearch && matchesStatus && matchesNominal) {
+        row.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        row.classList.add('hidden');
+      }
+    });
+
+    const emptyState = document.getElementById('emptyTableState');
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    }
+  }
+
+  function resetFilters() {
+    document.getElementById('adminSearchInput').value = '';
+    document.getElementById('statusFilter').value = 'all';
+    document.getElementById('nominalFilter').value = 'all';
+    filterTable();
+  }
+
+  // Bind Events
+  document.getElementById('adminSearchInput').addEventListener('input', filterTable);
+  document.getElementById('statusFilter').addEventListener('change', filterTable);
+  document.getElementById('nominalFilter').addEventListener('change', filterTable);
+
+  document.getElementById('btnExportCsv').addEventListener('click', function() {
+    showToast('Mengunduh berkas laporan_pengajuan_kredit_mei2025.csv ...', 'download');
+  });
+</script></main></div></body></html>

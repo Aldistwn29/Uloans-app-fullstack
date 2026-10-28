@@ -1,0 +1,112 @@
+/* src/index.css */
+@import 'tailwindcss';
+
+@theme {
+  /* === ULoans Design Tokens (bank bjb-inspired) === */
+
+  /* Primary & variants */
+  --color-primary:               #003b72;
+  --color-primary-container:     #00529b;
+  --color-primary-hover:         #001c3b;
+  --color-on-primary:            #ffffff;
+  --color-on-primary-fixed:      #001c3b;
+
+  /* Secondary */
+  --color-secondary:             #356096;
+  --color-secondary-fixed:       #d4e3ff;
+  --color-secondary-fixed-dim:   #a5c8ff;
+  --color-on-secondary:          #ffffff;
+  --color-on-secondary-fixed:    #001c3a;
+
+  /* Tertiary (accent kuning) */
+  --color-tertiary:              #745b00;
+  --color-tertiary-container:    #d0a600;
+  --color-tertiary-fixed:        #ffe08b;
+  --color-tertiary-fixed-dim:    #f1c100;
+  --color-on-tertiary:           #ffffff;
+  --color-on-tertiary-fixed:     #241a00;
+
+  /* Surface scale */
+  --color-surface:               #f9f9ff;
+  --color-surface-bright:        #f9f9ff;
+  --color-surface-dim:           #cfdaf2;
+  --color-surface-variant:       #d8e3fb;
+  --color-surface-container-lowest:  #ffffff;
+  --color-surface-container-low:     #f0f3ff;
+  --color-surface-container:         #e7eeff;
+  --color-surface-container-high:    #dee8ff;
+  --color-surface-container-highest: #d8e3fb;
+
+  /* On-surface */
+  --color-on-surface:            #111c2d;
+  --color-on-surface-variant:    #424751;
+  --color-inverse-surface:       #263143;
+  --color-inverse-on-surface:    #ecf1ff;
+
+  /* Outline */
+  --color-outline:               #727782;
+  --color-outline-variant:       #c2c6d3;
+
+  /* Semantic */
+  --color-error:                 #ba1a1a;
+  --color-error-container:       #ffdad6;
+  --color-on-error:              #ffffff;
+  --color-on-error-container:    #93000a;
+
+  /* Background */
+  --color-background:            #f9f9ff;
+  --color-on-background:         #111c2d;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+
+  /* Border radius */
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   6px;
+  --radius-xl:   8px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-subtle:  0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-medium:  0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-overlay: 0 16px 40px rgba(15, 23, 42, 0.14);
+}
+
+/* === Base reset === */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-on-surface);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body { margin: 0; min-height: 100svh; }
+
+#root { min-height: 100svh; display: flex; flex-direction: column; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  margin: 0;
+  line-height: 1.2;
+}
+
+p { margin: 0; }
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
