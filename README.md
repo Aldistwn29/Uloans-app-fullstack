@@ -22,11 +22,11 @@ Screenshots can be added to the paths below:
 
 ### Login
 
-![ULoans login page](docs/screenshots/login.png)
+![ULoans login page](docs/login.png)
 
 ### Customer dashboard
 
-![ULoans customer dashboard](docs/screenshots/dashboard-customer.png)
+![ULoans customer dashboard](docs/screenshots/dashboard.png)
 
 > These images are optional portfolio assets. Add screenshots without personal
 > information, real credentials, private tokens, or sensitive customer data.
